@@ -22,23 +22,32 @@ body {
   --accent-color: #404bbf;
 }
 
-.conteiner {
-  width: 1440px;
-}
+/* .conteiner { */
+
 /*======================================Heder================================*/
 
 .header {
   height: 72px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
-.nav,
+.header-conteiner {
+  display: flex;
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .addressa {
   display: flex;
-  flex-direction: row;
+  gap: 40px;
+  font-style: normal;
 }
 
-.addressa {
-  font-style: normal;
+.nav {
+  align-items: center;
+  display: flex;
 }
 
 .menu {
@@ -47,12 +56,6 @@ body {
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-
-  position: absolute;
-  width: 261px;
-  left: 347px;
-  margin-top: 24px;
-  margin-bottom: 0;
 }
 
 .logo {
@@ -67,11 +70,7 @@ body {
   color: #4d5ae5;
   flex-direction: row;
   padding: 0px;
-
-  position: absolute;
-  width: 115px;
-  left: 156px;
-  margin-top: 25.5px;
+  margin-right: 76px;
 }
 
 .studio {
@@ -87,6 +86,10 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+}
+
+.studio-menu {
+  padding: 24px 0;
 }
 
 .menu-link {
@@ -106,27 +109,12 @@ body {
   color: #434455;
 }
 
-.mail {
-  position: absolute;
-  width: 153px;
-  left: 940px;
-  margin-top: 24px;
-  display: inline-block;
-}
-
-.ph-nom {
-  position: absolute;
-  width: 151px;
-  left: 1133px;
-  margin-top: 24px;
-  display: inline-block;
-}
-
 /*===============================/Main=============================*/
 
 .hero {
   background-color: #2e2f42;
   height: 600px;
+  padding: 188px 0;
 }
 
 .hero-image {
@@ -140,7 +128,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 
-  width: 496px;
+  max-width: 496px;
 }
 
 .order-bt {
@@ -154,14 +142,13 @@ body {
   color: white;
   background-color: #4d5ae5;
   cursor: pointer;
-  margin-top: 48px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 169px;
-  height: 58px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 
 .order-bt:hover,
@@ -169,11 +156,11 @@ body {
   background-color: #404bbf;
 }
 
-.order-service {
-  width: 105px;
-}
-
 /* ===================== SECTION TWO =================== */
+
+.section-two {
+  padding: 120px 0;
+}
 
 .feature {
   font-family: "Roboto", sans-serif;
@@ -182,6 +169,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .text-feat {
@@ -198,12 +186,17 @@ body {
   flex-direction: row;
   margin-top: 120px;
   margin-left: 156px;
-
   gap: 24px;
 }
 
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
 /*What are we doing*/
 
+.section-three {
+  padding-bottom: 120px;
+}
 .titles {
   font-family: "Roboto", sans-serif;
   font-size: 36px;
@@ -216,18 +209,29 @@ body {
 
 .img-doing {
   display: flex;
-  flex-direction: row;
   margin-left: 156px;
   padding-right: 24px;
   gap: 24px;
 }
 
 .title-doing {
-  margin-top: 120px;
   margin-bottom: 72px;
 }
 
-/*Our Team*/
+.img-doing-item {
+  width: calc((100% - 48px) / 3);
+}
+
+/*====================Our Team====================*/
+
+.section-four {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.our-team-title {
+  margin-bottom: 72px;
+}
 
 .name {
   font-family: "Roboto", sans-serif;
@@ -237,6 +241,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team {
@@ -255,22 +260,19 @@ body {
 
 .img-team {
   display: flex;
-  flex-direction: row;
   padding-top: 72px;
   margin-left: 156px;
   gap: 24px;
 }
 
-.our-team-title {
-  margin-top: 120px;
-  margin-left: auto;
-}
-.section-four {
-  background-color: #f4f4fd;
-}
-
 .name-prof {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.name-container {
+  padding: 32px 16px;
 }
 /*======================Footer===================*/
 
@@ -279,6 +281,7 @@ body {
   width: 1440px;
   height: 312px;
   background: #2e2f42;
+  padding: 100px 0;
 }
 
 .text-foot {
@@ -287,8 +290,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  width: 264px;
-  margin-top: 17.5px;
+  max-width: 264px;
   margin-left: 156px;
 }
 
@@ -298,12 +300,14 @@ body {
   font-size: 18px;
   line-height: 1.17;
   display: flex;
+  display: inline-block;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
   margin-top: 101.5px;
   margin-left: 156px;
+  margin-bottom: 16px;
 }
 
 .studio-footer {
