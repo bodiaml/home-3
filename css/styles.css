@@ -26,15 +26,20 @@ img {
   display: block;
 }
 
-/* .container {
+li {
+  display: block;
+}
+
+.container {
   width: 1158px;
-} */
+  margin: 0 auto;
+}
 
 /*======================================Heder================================*/
 
 .header {
-  height: 72px;
   border-bottom: 1px solid #e7e9fc;
+  height: 72px;
 }
 
 .header-container {
@@ -42,6 +47,7 @@ img {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  height: 72px;
 }
 
 .addressa {
@@ -50,10 +56,17 @@ img {
 
 .contacts {
   display: flex;
+  flex-direction: row;
   gap: 40px;
-  margin-left: 300px;
+  margin-top: 24px;
+  padding: 0%;
+  margin-left: 332px;
 }
 
+.contact-ph {
+  margin-right: 0;
+  display: block;
+}
 .nav {
   align-items: center;
   display: flex;
@@ -197,6 +210,7 @@ img {
   gap: 24px;
   box-sizing: border-box;
   padding: 0;
+  margin: 0 auto;
 }
 
 .features-item {
@@ -220,6 +234,7 @@ img {
 .img-doing {
   display: flex;
   gap: 24px;
+  padding-left: 0%;
 }
 
 .title-doing {
@@ -227,7 +242,7 @@ img {
 }
 
 .img-doing-item {
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 
 /*====================Our Team====================*/
@@ -287,7 +302,6 @@ img {
 .footer {
   background: #2e2f42;
   padding: 100px 0;
-  height: 112px;
 }
 
 .text-foot {

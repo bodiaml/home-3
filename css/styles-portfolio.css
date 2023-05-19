@@ -13,11 +13,16 @@ a {
 img {
   display: block;
 }
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+}
 /* ======================== Header ================= */
 
 .header {
-  height: 72px;
   border-bottom: 1px solid #e7e9fc;
+  height: 72px;
 }
 
 .header-container {
@@ -25,6 +30,7 @@ img {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  height: 72px;
 }
 
 .addressa {
@@ -33,10 +39,17 @@ img {
 
 .contacts {
   display: flex;
+  flex-direction: row;
   gap: 40px;
-  margin-left: 300px;
+  margin-top: 24px;
+  padding: 0%;
+  margin-left: 332px;
 }
 
+.contact-ph {
+  margin-right: 0;
+  display: block;
+}
 .nav {
   align-items: center;
   display: flex;
@@ -172,16 +185,18 @@ img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  padding: 0%;
 }
 
 .link-photo {
   width: calc((100%-48px) / 3);
+  width: 360px;
 }
 
-.container {
+.container-photo {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
   border-top: none;
+  border: 1px solid #e7e9fc;
 }
 
 .port-title {
@@ -193,7 +208,6 @@ img {
 .footer {
   background: #2e2f42;
   padding: 100px 0;
-  height: 112px;
 }
 
 .text-foot {
