@@ -28,7 +28,7 @@ img {
 .header-container {
   display: flex;
   width: 1158px;
-  margin: 0 156px;
+  margin: 0 auto;
   padding: 0 15px;
   height: 72px;
 }
@@ -190,8 +190,6 @@ img {
 }
 .link-photo {
   width: calc((100% - 48px) / 3);
-  width: 360px;
-  height: 420px;
 }
 
 .container-photo {
