@@ -195,6 +195,14 @@ li {
   padding: 120px 0;
 }
 
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.feature-container {
+  padding: 0 15px;
+}
+
 .feature {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -217,16 +225,9 @@ li {
 
 .our-features {
   display: flex;
-  flex-direction: row;
-  margin-left: 156px;
   gap: 24px;
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
-}
-
-.features-item {
-  width: calc((100%-72px) / 4);
+  padding: 0;
 }
 /*===================What are we doing=======================*/
 
