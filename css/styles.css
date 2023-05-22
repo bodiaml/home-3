@@ -33,6 +33,7 @@ li {
 .container {
   width: 1158px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 /*======================================Heder================================*/
@@ -46,7 +47,6 @@ li {
   display: flex;
   width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
   height: 72px;
 }
 
@@ -240,10 +240,6 @@ li {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-}
-
-.doing-cont {
-  padding: 0 16px;
 }
 
 .img-doing {
